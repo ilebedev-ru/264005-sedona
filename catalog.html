@@ -8,7 +8,7 @@
     <body>
         <header class="main-header">
             <nav class="header-nav">
-                <img src="img/logo.png" alt="Седона" width="138" height="70">
+                <a href="index.html" title="Вернуться на главную страницу"><img src="img/logo.png" alt="Седона" width="138" height="70"></a>
                 <ul class="main-menu">
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="news.html">Фото и видео</a></li>
@@ -43,55 +43,72 @@
                         <input type="range" id="price" name="price" min="0" max="3000" step="100">
                         <output name="price"></output>
                     </fieldset>
-                    <input type="submit" value="Показать">
+                    <button type="submit">Показать</button>
                 </form> 
             </section>
             <section class="search-results">
                 <h2 class="visually-hidden">Результаты поиска</h2>
                 <p>Найдено: 3</p>
-                <p>Сортировка:</p>
-                <ul class="search-results-sorting">
-                    <li>По цене</li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
-                </ul>
+                <div class="search-results-sorting">
+                    Сортировка:
+                    <ul>
+                        <li>По цене</li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По рейтингу</a></li>
+                    </ul>
+                    <div class="search-results-sorting-order">
+                        <button class="search-results-sorting-order-up">Сверху вниз</button>
+                        <button class="search-results-sorting-order-down">Cнизу вверх</button>
+                    </div>
+                </div>
+
                 <ul class="search-results-list">
+                    
                     <li class="search-results-item">
-                        <img src="img/hotels-prev-1.jpg" alt="Amara Resort & spa">
-                        <h3 class="search-results-item-title">Amara Resort & Spa</h3>
-                        <span>Гостиница</span><span>от 4000 р.</span>
+                        <div class="search-results-item-info">
+                            <img src="img/hotels-prev-1.jpg" alt="Amara Resort & spa">
+                            <h3 class="search-results-item-title">Amara Resort & Spa</h3>
+                            <span>Гостиница</span><span>от 4000 р.</span>
+                            <a class="search-results-btn-more" href="#">Подробнее</a>
+                            <a class="search-results-btn-booking" href="#">Забронировать</a>
+                        </div>
                         <div class="search-results-item-rating">
                             <span class="search-results-item-stars"></span>
                             <p>Рейтинг: 8,5</p>
                         </div>
-                        <a class="search-results-btn-more" href="#">Подробнее</a>
-                        <a class="search-results-btn-booking" href="#">Забронировать</a>
                     </li>
+
                     <li class="search-results-item">
-                        <img src="img/hotels-prev-2.jpg" alt="Desert Quail Inn">
-                        <h3 class="search-results-item-title">Desert Quail Inn</h3>
-                        <span>Мотель</span><span>от 3000 р.</span>
+                        <div class="search-results-item-info">
+                            <img src="img/hotels-prev-2.jpg" alt="Desert Quail Inn">
+                            <h3 class="search-results-item-title">Desert Quail Inn</h3>
+                            <span>Мотель</span><span>от 3000 р.</span>
+                            <a class="search-results-btn-more" href="#">Подробнее</a>
+                            <a class="search-results-btn-booking" href="#">Забронировать</a>
+                        </div>
                         <div class="search-results-item-rating">
                             <span class="search-results-item-stars"></span>
                             <p>Рейтинг: 8,9</p>
                         </div>
-                        <a class="search-results-btn-more" href="#">Подробнее</a>
-                        <a class="search-results-btn-booking" href="#">Забронировать</a>
                     </li>
+
                     <li class="search-results-item">
-                        <img src="img/hotels-prev-3.jpg" alt="Villas At Poco Diablo">
-                        <h3 class="search-results-item-title">Villas At Poco Diablo</h3>
-                        <span>Апартаменты</span><span>от 2000 р.</span>
+                        <div class="search-results-item-info">
+                            <img src="img/hotels-prev-3.jpg" alt="Villas At Poco Diablo">
+                            <h3 class="search-results-item-title">Villas At Poco Diablo</h3>
+                            <span>Апартаменты</span><span>от 2000 р.</span>
+                            <a class="search-results-btn-more" href="#">Подробнее</a>
+                            <a class="search-results-btn-booking" href="#">Забронировать</a>
+                        </div>
                         <div class="search-results-item-rating">
                             <span class="search-results-item-stars"></span>
                             <p>Рейтинг: 9,2</p>
                         </div>
-                        <a class="search-results-btn-more" href="#">Подробнее</a>
-                        <a class="search-results-btn-booking" href="#">Забронировать</a>
                     </li>
                 </ul>
             </section>
         </main>
+
         <footer class="main-footer">
             <p>#VISITSEDONA</p> 
             <div class="social-media">
@@ -104,4 +121,4 @@
           <p>Website by <a class="website-by" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></p>
         </footer>
     </body>
-</html>    
+</html>
