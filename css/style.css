@@ -1,23 +1,429 @@
 body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PTSans", "Arial", sans-serif;
-	font-weight: normal;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	background-image: url("../img/main-background.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+.main-img {
+	color: #ffffff;
+
+	height: 564px;
+
+	background: #384f66;
+	background-image: url("../img/main-photo.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.header-nav {
+	color: #000000;
+
+	background: #ffffff;
+}
+
+.main-menu {
+	list-style: none;
+}
+
+.main-menu a {
 	color: #000000;
 }
 
-h2 {
-	font-size: 30px;
-	line-height: 42px;
-	font-weight: normal;
-	color: #000000;	
+.main-menu a:hover,
+.main-menu a:focus {
+	color: #81b3d2;
 }
 
-h3 {
+.main-menu a:active {
+	opacity: 0.3;
+}
+
+.main-menu-active {
+	color: #766357;
+}
+
+.what-is-sedona {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
+	text-align: center;
+}
+
+.what-is-sedona-descr {
+	font-weight: normal;
+	text-align: center;
+}
+
+.feature {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.feature-description h2,
+.advice-list h3,
+.feature-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	text-align: center;
+}
+
+.feature-description p,
+.advice-list p,
+.feature-item p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.advice-list {
+	list-style: none;
+}
+
+.features {
 	color: #000000;
+
+	background-color: #eeeeee;
+}
+
+.search-hostels {
+	text-align: center;
+}
+
+.search-hotels-title {
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;	
+}
+
+.search-hotels-desc {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.search-hostels-btn {
+	font: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #766357;
+	border: none;
+}
+
+.search-hostels-btn:hover,
+.search-hostels-btn:focus {
+	background-color: #604e43;
+}
+
+.search-hostels-btn:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.search-form {
+	color: #000000;
+	text-align: center;
+
+	background-color: #ffffff;
+	box-shadow: 7px 0 15px rgba(0,0,0,0.15);
 }
 
 
+.search-form input {
+	font: inherit;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.search-form input:hover {
+	background-color: #ebebeb;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.search-form-btn {
+	font: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #81b3d2;
+	border: none;
+}
+
+.search-form-btn:hover,
+.search-form-btn:focus {
+	background-color: #669ec0;
+}
+
+.search-form-btn:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+
+
+/* для страницы каталога*/
+
+.catalog-filter-container {
+	color: #ffffff;
+
+	background-color: #4178a1;
+	background-image: url("../img/filter-background.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+
+.catalog-filter fieldset {
+	border: none;
+}
+
+.catalog-filter legend {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.catalog-filter label {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+
+.price-number {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+
+	border: 2px solid #ffffff;
+}
+
+.catalog-filter-btn {
+	width: 133px;
+	height:32px;
+
+	color: #ffffff;
+	font: inherit;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.catalog-filter-btn:hover {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.search-results-find {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.search-results-sorting {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-sorting ul {
+	color: #81b3d2;
+	list-style: none;
+}
+
+.search-results-sorting a {
+	color: rgba(0,0,0,0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+
+.search-results-sorting-order button {
+	font-size:0;
+
+	border: none;
+	background-color: transparent;
+	fill: #cacaca;
+}
+
+.search-results-sorting-order button:nth-child(2) {
+	fill: #81b3d2;
+}
+
+.search-results-sorting-order button:hover,
+.search-results-sorting-order button:focus {
+	fill: #231f20;
+}
+
+.search-results-sorting-order button:active {
+	fill: #81b3d2;
+}
+
+.search-results-list {
+	list-style: none;
+}
+
+.search-results-item {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-item-info h3 {
+	color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.search-results-item-info h3:hover,
+.search-results-item-info h3:focus {
+	color: #81b3d2;
+}
+
+.search-results-item-info h3:active {
+	opacity: 0.3;
+}
+
+.search-results-item-info span {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+
+	margin-right: 38px;
+}
+
+.search-results-btn a {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+
+	padding: 5px 20px;
+}
+
+.search-results-btn-more {
+	background-color: #81b3d2;
+}
+
+.search-results-btn-more:hover,
+.search-results-btn-more:focus {
+	background-color: #669ec0;
+}
+
+.search-results-btn-more:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #5496bd;
+}
+
+.search-results-btn-booking {
+	background-color: #766357;
+}
+
+.search-results-btn-booking:hover,
+.search-results-btn-booking:focus {
+	background-color: #604e43;
+}
+
+.search-results-btn-booking:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #503e33;
+}
+
+.search-results-item-stars {
+	fill: #81b3d2;
+}
+
+.search-results-item-rating p {
+	color: #000000;
+	font-size: 14px;
+	line-height: 21px;	
+	font-weight: normal;
+	text-align: center;
+
+	background-color: #f2f2f2;
+
+	width: 110px;
+	padding: 5px 0;
+}
+
+
+
+/* футер*/
+
+
+.main-footer-hashtag {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.social-icon {
+	list-style: none;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-icon a {
+	color: #000000;
+}
+
+.footer-copyrite {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.footer-copyrite a {
+	fill: #000000;
+}
+
+.footer-copyrite a:hover,
+.footer-copyrite a:focus {
+	fill: #81b3d2;
+}
+
+.footer-copyrite a:active {
+	fill:#bdbbbc; 
+}
