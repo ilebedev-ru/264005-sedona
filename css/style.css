@@ -50,7 +50,7 @@ img {
 	margin: 0 auto;
 	padding: 0;
 
-	box-shadow: 0 0 20px 0 rgba(0,0,0,.2)
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2); 
 }
 
 .index {
@@ -313,33 +313,67 @@ img {
 	position: absolute;
 	left: 0;
 	right: 0;
+	top: 0;
 
 	width: 568px;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 55px;
 	padding-bottom: 55px;
 
 	color: #000000;
 	text-align: left;
 
 	background-color: #ffffff;
-	box-shadow: 7px 0 15px rgba(0,0,0,0.15);
+	box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15); 
+}
+
+.search-form-relative {
+	position:relative;
+}
+
+.calendar {
+	position: absolute;
+	right: 9px;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: transparent;
+	border: none;
+
+	fill: #a9a9a9;
+}
+
+.calendar:hover,
+.calendar:focus {
+	fill: #000000;
+}
+
+.calendar:active {
+	fill: #81b3d1;
 }
 
 
 .search-form-container {
-
 	width: 458px;
 	margin: auto;
 }
 
 .search-form-container p {
+	position: relative;
+
 	display:flex;
 	justify-content: space-between;
+	align-items: center;
+
+	margin: 0;
+	margin-bottom: 29px;
 }
 
+
 .search-form label {
-	min-width: 112px;
+	width: 100px;
+	margin-right: 12px;
 }
 
 .search-form input {
@@ -353,6 +387,7 @@ img {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	text-transform: uppercase;
 
 	background-color: #f2f2f2;
 	border: none;
@@ -367,8 +402,51 @@ img {
 	border: 2px solid #e5e5e5;
 }
 
+.search-form-people {
+	display:flex;
+
+	margin-bottom: 54px;
+}
+
+
+.search-form-man {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+.search-form-child {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	text-align: center;
+}
+
+.search-form-people input {
+	width: 50%;
+	text-align: center;
+	padding: 19px 0;
+}
+
+.people-number {
+	display: flex;
+
+	width: 50%;
+	height: 38px;
+}
+
+.people-number button {
+	width: 33.33%;
+	height: 38px;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+
 .search-form-btn {
 	width: 100%;
+	padding: 15px 0;
 
 	font: inherit;
 	font-size: 21px;
