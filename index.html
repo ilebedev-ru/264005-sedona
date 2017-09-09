@@ -5,7 +5,7 @@
         <title>Седона</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <div class="main-container main-container-index">
@@ -134,7 +134,7 @@
 
                 <section class="map">
                     <h2 class="visually-hidden">Карта</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836867.6037532454!2d-112.27373482952747!3d34.98131211883105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1504946878037" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836867.6037532454!2d-112.27373482952747!3d34.98131211883105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1504946878037" width="1200" height="593" allowfullscreen></iframe>
                     <img src="img/map.jpg" alt="Карта как проехать в Седону" width="1200" height="593">
                 </section>
 
@@ -176,40 +176,6 @@
                 </div>
             </footer>
         </div>
-
-<script>
-
-var searchformbtn = document.querySelector(".search-hostels-btn");
-var searchwrapper = document.querySelector(".search-form-wrapper");
-
-var datein = searchwrapper.querySelector("[name=date-in]");
-var dateout = searchwrapper.querySelector("[name=date-out]");
-
-var form = searchwrapper.querySelector("form");
-
-searchwrapper.classList.toggle("search-form-open");
-searchwrapper.classList.toggle("search-form-close");
-
-searchformbtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-
-     searchwrapper.classList.toggle("search-form-close");
-     searchwrapper.classList.toggle("search-form-open");
-     datein.focus();
-});
-
-
-
-form.addEventListener("submit", function (evt) {
-    if (!datein.value || !dateout.value) {
-        evt.preventDefault();
-        console.log("пустое значение!");
-    }
-
-    // console.log("отправляем форму");
-});
-
-</script>
-
+        <script src="js/script.js"></script>
     </body>
 </html>
