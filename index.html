@@ -7,15 +7,15 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body class="body-index">
-        <div class="main-container">
+    <body>
+        <div class="main-container main-container-index">
             <header class="main-header index">
                 <nav class="header-nav">
                     <img src="img/logo.png" alt="Седона" width="138" height="70">
                     <ul class="main-menu">
-                        <li class="text-left"><a href="info.html">Информация</a></li>
-                        <li class="text-left"><a href="news.html">Фото и видео</a></li>
-                        <li class="text-right"><a href="price.html">Карта штата</a></li>
+                        <li class="text-left"><a href="#">Информация</a></li>
+                        <li class="text-left"><a href="#">Фото и видео</a></li>
+                        <li class="text-right"><a href="#">Карта штата</a></li>
                         <li class="text-right"><a href="catalog.html">Гостиницы</a></li>
                     </ul>
                 </nav>  
@@ -86,40 +86,43 @@
 
                     <p class="search-hotels-title">Заинтересовались?</p>
                     <p class="search-hotels-desc">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
                     <button class="search-hostels-btn">Поиск гостиницы в Седоне</button>
-                    <div class="search-form-relative">
+                    <div class="search-form-wrapper search-form-open">
                         <div class="search-form">
                             <form method="get" action="echo.htmlacademy.ru" class="search-form-container">
                                 <p>
                                     <label for="search-form-date-in">Дата заезда: </label>
                                     <input type="text" name="date-in" id="search-form-date-in" value="24 апреля 2017">
-                                    <button type="button" class="calendar"><span class="visually-hidden">Открыть календарь</span>
+                                    <button type="button" class="calendar">
+                                        <span class="visually-hidden">Открыть календарь</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.3 2h-2.8V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4h-3.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H5.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H1.8C0.8 2 0 2.8 0 3.9v16.3C0 21.2 0.8 22 1.8 22h17.5C20.2 22 21 21.2 21 20.2V3.9C21 2.8 20.2 2 19.3 2zM19.7 20.2c0 0.3-0.2 0.5-0.4 0.5H1.8c-0.2 0-0.4-0.2-0.4-0.5V3.9c0-0.3 0.2-0.5 0.4-0.5h2.8v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h2.8c0.2 0 0.4 0.2 0.4 0.5V20.2z"/><rect x="4.6" y="8.2" width="2.6" height="2.1"/><rect x="4.6" y="11.7" width="2.6" height="2.1"/><rect x="4.6" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="11.7" width="2.6" height="2.1"/><rect x="9.2" y="8.2" width="2.6" height="2.1"/><rect x="13.8" y="15.1" width="2.6" height="2.1"/><rect x="13.8" y="11.7" width="2.6" height="2.1"/><rect x="13.8" y="8.2" width="2.6" height="2.1"/></svg>
                                     </button>
                                 </p>
                                 <p>
                                     <label for="search-form-date-out">Дата выезда: </label>
                                     <input type="text" name="date-out" id="search-form-date-out" value="4 июля 2017">
-                                    <button type="button" class="calendar"><span class="visually-hidden">Открыть календарь</span>
+                                    <button type="button" class="calendar">
+                                        <span class="visually-hidden">Открыть календарь</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.3 2h-2.8V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4h-3.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H5.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H1.8C0.8 2 0 2.8 0 3.9v16.3C0 21.2 0.8 22 1.8 22h17.5C20.2 22 21 21.2 21 20.2V3.9C21 2.8 20.2 2 19.3 2zM19.7 20.2c0 0.3-0.2 0.5-0.4 0.5H1.8c-0.2 0-0.4-0.2-0.4-0.5V3.9c0-0.3 0.2-0.5 0.4-0.5h2.8v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h2.8c0.2 0 0.4 0.2 0.4 0.5V20.2z"/><rect x="4.6" y="8.2" width="2.6" height="2.1"/><rect x="4.6" y="11.7" width="2.6" height="2.1"/><rect x="4.6" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="11.7" width="2.6" height="2.1"/><rect x="9.2" y="8.2" width="2.6" height="2.1"/><rect x="13.8" y="15.1" width="2.6" height="2.1"/><rect x="13.8" y="11.7" width="2.6" height="2.1"/><rect x="13.8" y="8.2" width="2.6" height="2.1"/></svg>
                                     </button>
                                 </p>
                                 
                                 <div class="search-form-people">
                                     <div class="search-form-man">
-                                        <label for="search-form-man">Взрослые: </label>
+                                        <label for="search-form-man">Взрослые:</label>
                                         <div class="people-number">
-                                            <button type="button" class="button-min">-</button>
+                                            <button type="button" class="button-minus">&#8722;<span class="visually-hidden">Убавить</span></button>
                                             <input type="text" name="mans" id="search-form-man" value="2">
-                                            <button type="button" class="button-plus">+</button>
+                                            <button type="button" class="button-plus">&#43;<span class="visually-hidden">Прибавить</span></button>
                                         </div>
                                     </div>
                                      <div class="search-form-child">
-                                        <label for="search-form-child">Дети: </label>
+                                        <label for="search-form-child">Дети:</label>
                                         <div class="people-number">
-                                            <button type="button" class="button-min">-</button>
+                                            <button type="button" class="button-minus">&#8722;<span class="visually-hidden">Убавить</span></button>
                                             <input type="text" name="child" id="search-form-child" value="0"> 
-                                            <button type="button" class="button-plus">+</button>
+                                            <button type="button" class="button-plus">&#43;<span class="visually-hidden">Прибавить</span></button>
                                         </div>
                                     </div>
                                 </div>
@@ -131,7 +134,8 @@
 
                 <section class="map">
                     <h2 class="visually-hidden">Карта</h2>
-                    <img src="img/map.jpg" alt="Карта как проехать в Седону" width="1200" height="473">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836867.6037532454!2d-112.27373482952747!3d34.98131211883105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1504946878037" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <img src="img/map.jpg" alt="Карта как проехать в Седону" width="1200" height="593">
                 </section>
 
             </main>
@@ -172,5 +176,40 @@
                 </div>
             </footer>
         </div>
+
+<script>
+
+var searchformbtn = document.querySelector(".search-hostels-btn");
+var searchwrapper = document.querySelector(".search-form-wrapper");
+
+var datein = searchwrapper.querySelector("[name=date-in]");
+var dateout = searchwrapper.querySelector("[name=date-out]");
+
+var form = searchwrapper.querySelector("form");
+
+searchwrapper.classList.toggle("search-form-open");
+searchwrapper.classList.toggle("search-form-close");
+
+searchformbtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+     searchwrapper.classList.toggle("search-form-close");
+     searchwrapper.classList.toggle("search-form-open");
+     datein.focus();
+});
+
+
+
+form.addEventListener("submit", function (evt) {
+    if (!datein.value || !dateout.value) {
+        evt.preventDefault();
+        console.log("пустое значение!");
+    }
+
+    // console.log("отправляем форму");
+});
+
+</script>
+
     </body>
 </html>
