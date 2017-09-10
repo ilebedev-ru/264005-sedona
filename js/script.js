@@ -4,7 +4,13 @@ var searchwrapper = document.querySelector(".search-form-wrapper");
 var datein = searchwrapper.querySelector("[name=date-in]");
 var dateout = searchwrapper.querySelector("[name=date-out]");
 
-var form = searchwrapper.querySelector("form");
+var minusman = document.querySelector("#minusman");
+var plusman = document.querySelector("#plusman");
+var minuschild = document.querySelector("#minuschild");
+var pluschild = document.querySelector("#pluschild");
+var numMan = document.querySelector("#search-form-man").value;
+var numChild = document.querySelector("#search-form-child").value;
+
 
 searchwrapper.classList.toggle("search-form-open");
 searchwrapper.classList.toggle("search-form-close");
@@ -17,11 +23,31 @@ searchformbtn.addEventListener("click", function (evt) {
      datein.focus();
 });
 
+minusman.addEventListener("click", function(evt) {
+    event.preventDefault();
 
-
-form.addEventListener("submit", function (evt) {
-    if (!datein.value || !dateout.value) {
-        evt.preventDefault();
-        console.log("пустое значение!");
+    if (numMan > 0) {
+        numMan--;
+        document.querySelector("#search-form-man").value = numMan;
     }
+});
+
+plusman.addEventListener("click", function(evt) {
+    event.preventDefault();
+    numMan++;
+    document.querySelector("#search-form-man").value = numMan;
+});
+
+minuschild.addEventListener("click", function(evt) {
+    event.preventDefault();
+    if (numChild > 0) {
+        numChild--;
+        document.querySelector("#search-form-child").value = numChild;
+    }
+});
+
+pluschild.addEventListener("click", function(evt) {
+    event.preventDefault();
+    numChild++;
+    document.querySelector("#search-form-child").value = numChild;
 });

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Седона</title>
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
@@ -93,7 +93,7 @@
                             <form method="get" action="echo.htmlacademy.ru" class="search-form-container">
                                 <p>
                                     <label for="search-form-date-in">Дата заезда: </label>
-                                    <input type="text" name="date-in" id="search-form-date-in" value="24 апреля 2017">
+                                    <input type="text" name="date-in" id="search-form-date-in" value="24 апреля 2017" required>
                                     <button type="button" class="calendar">
                                         <span class="visually-hidden">Открыть календарь</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.3 2h-2.8V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4h-3.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H5.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H1.8C0.8 2 0 2.8 0 3.9v16.3C0 21.2 0.8 22 1.8 22h17.5C20.2 22 21 21.2 21 20.2V3.9C21 2.8 20.2 2 19.3 2zM19.7 20.2c0 0.3-0.2 0.5-0.4 0.5H1.8c-0.2 0-0.4-0.2-0.4-0.5V3.9c0-0.3 0.2-0.5 0.4-0.5h2.8v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h2.8c0.2 0 0.4 0.2 0.4 0.5V20.2z"/><rect x="4.6" y="8.2" width="2.6" height="2.1"/><rect x="4.6" y="11.7" width="2.6" height="2.1"/><rect x="4.6" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="11.7" width="2.6" height="2.1"/><rect x="9.2" y="8.2" width="2.6" height="2.1"/><rect x="13.8" y="15.1" width="2.6" height="2.1"/><rect x="13.8" y="11.7" width="2.6" height="2.1"/><rect x="13.8" y="8.2" width="2.6" height="2.1"/></svg>
@@ -101,7 +101,7 @@
                                 </p>
                                 <p>
                                     <label for="search-form-date-out">Дата выезда: </label>
-                                    <input type="text" name="date-out" id="search-form-date-out" value="4 июля 2017">
+                                    <input type="text" name="date-out" id="search-form-date-out" value="4 июля 2017" required>
                                     <button type="button" class="calendar">
                                         <span class="visually-hidden">Открыть календарь</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.3 2h-2.8V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4h-3.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H5.9V0.6c0-0.4-0.3-0.7-0.7-0.7 -0.4 0-0.7 0.3-0.7 0.7v1.4H1.8C0.8 2 0 2.8 0 3.9v16.3C0 21.2 0.8 22 1.8 22h17.5C20.2 22 21 21.2 21 20.2V3.9C21 2.8 20.2 2 19.3 2zM19.7 20.2c0 0.3-0.2 0.5-0.4 0.5H1.8c-0.2 0-0.4-0.2-0.4-0.5V3.9c0-0.3 0.2-0.5 0.4-0.5h2.8v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h3.9v1.4c0 0.4 0.3 0.7 0.7 0.7 0.4 0 0.7-0.3 0.7-0.7V3.4h2.8c0.2 0 0.4 0.2 0.4 0.5V20.2z"/><rect x="4.6" y="8.2" width="2.6" height="2.1"/><rect x="4.6" y="11.7" width="2.6" height="2.1"/><rect x="4.6" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="15.1" width="2.6" height="2.1"/><rect x="9.2" y="11.7" width="2.6" height="2.1"/><rect x="9.2" y="8.2" width="2.6" height="2.1"/><rect x="13.8" y="15.1" width="2.6" height="2.1"/><rect x="13.8" y="11.7" width="2.6" height="2.1"/><rect x="13.8" y="8.2" width="2.6" height="2.1"/></svg>
@@ -112,17 +112,17 @@
                                     <div class="search-form-man">
                                         <label for="search-form-man">Взрослые:</label>
                                         <div class="people-number">
-                                            <button type="button" class="button-minus">&#8722;<span class="visually-hidden">Убавить</span></button>
-                                            <input type="text" name="mans" id="search-form-man" value="2">
-                                            <button type="button" class="button-plus">&#43;<span class="visually-hidden">Прибавить</span></button>
+                                            <button type="button" class="button-minus" id="minusman">&#8722;<span class="visually-hidden">Убавить</span></button>
+                                            <input type="text" name="mans" id="search-form-man" value="2" required>
+                                            <button type="button" class="button-plus" id="plusman">&#43;<span class="visually-hidden">Прибавить</span></button>
                                         </div>
                                     </div>
                                      <div class="search-form-child">
                                         <label for="search-form-child">Дети:</label>
                                         <div class="people-number">
-                                            <button type="button" class="button-minus">&#8722;<span class="visually-hidden">Убавить</span></button>
+                                            <button type="button" class="button-minus" id="minuschild">&#8722;<span class="visually-hidden">Убавить</span></button>
                                             <input type="text" name="child" id="search-form-child" value="0"> 
-                                            <button type="button" class="button-plus">&#43;<span class="visually-hidden">Прибавить</span></button>
+                                            <button type="button" class="button-plus" id="pluschild">&#43;<span class="visually-hidden">Прибавить</span></button>
                                         </div>
                                     </div>
                                 </div>
@@ -176,6 +176,6 @@
                 </div>
             </footer>
         </div>
-        <script src="js/script.js"></script>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
