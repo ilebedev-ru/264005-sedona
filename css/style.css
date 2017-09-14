@@ -52,6 +52,7 @@ img {
 }
 
 .main-container-index {
+	background-color: #ffffff;
 	background-image: url("../img/main-photo.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -245,7 +246,8 @@ img {
   	height: 72px;
 
   	margin-left: -37.5px;
-
+	
+	background-color: #ffffff;
 	background-image: url(../img/advice-1.svg);
 }
 
@@ -255,6 +257,7 @@ img {
 
   	margin-left: -37px;
 
+	background-color: #ffffff;
 	background-image: url(../img/advice-2.svg);
 }
 
@@ -264,6 +267,7 @@ img {
 
   	margin-left: -32px;
 
+	background-color: #ffffff;
 	background-image: url(../img/advice-3.svg);
 }
 
@@ -623,7 +627,9 @@ img {
 
 .map {
 	font-size: 0;
-	line-height: 0
+	line-height: 0;
+
+	background-color: #eeebe7;
 }
 
 
